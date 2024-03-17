@@ -3,8 +3,8 @@ from typing import Final # convert a variable to a constant
 from decouple import config
 from telegram import InlineQueryResultArticle, InputTextMessageContent
 from telegram import Update
-from telegram.ext import ApplicationBuilder, ContextTypes
-from telegram.ext import CommandHandler, InlineQueryHandler
+from telegram.ext import ApplicationBuilder, ContextTypes, filters
+from telegram.ext import CommandHandler, MessageHandler, InlineQueryHandler
 
 
 """ \_____________________________[CONSTS]_____________________________/ """
@@ -31,6 +31,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
+        reply_to_message_id=update.effective_message.id,
         text=text,
     )
 
@@ -48,8 +49,10 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await context.bot.send_message(
         chat_id=update.effective_chat.id,
+        reply_to_message_id=update.effective_message.id,
         text=text,
     )
+
 
 async def about001(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = \
@@ -58,28 +61,48 @@ async def about001(update: Update, context: ContextTypes.DEFAULT_TYPE):
         1. Write @{} before your text...
         2. After writing your text, choose Uppercase or Lowercase option!
         """.format(context.bot.username)
-    await update.message.reply_text(text)
+        
+    await context.bot.send_message(
+        chat_id=update.effective_chat.id,
+        reply_to_message_id=update.effective_message.id,
+        text=text,
+    )
 
 async def about002(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = \
         """
         coming soon...
         """
-    await update.message.reply_text(text)
+    
+    await context.bot.send_message(
+        chat_id=update.effective_chat.id,
+        reply_to_message_id=update.effective_message.id,
+        text=text,
+    )
 
 async def about003(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = \
         """
         coming soon...
         """
-    await update.message.reply_text(text)
+    
+    await context.bot.send_message(
+        chat_id=update.effective_chat.id,
+        reply_to_message_id=update.effective_message.id,
+        text=text,
+    )
 
 async def about004(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = \
         """
         coming soon...
         """
-    await update.message.reply_text(text)
+    
+    await context.bot.send_message(
+        chat_id=update.effective_chat.id,
+        reply_to_message_id=update.effective_message.id,
+        text=text,
+    )
 
 
 """ \_____________________________[ACT_FUNCS]_____________________________/ """
