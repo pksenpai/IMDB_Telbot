@@ -10,8 +10,8 @@ from telegram import (
     Update,
 )
 from telegram.ext import (
-    ApplicationBuilder, 
-    ContextTypes, 
+    ApplicationBuilder,
+    ContextTypes,
     filters,
     CommandHandler,
     MessageHandler,
@@ -20,12 +20,12 @@ from telegram.ext import (
 from telegram.constants import ParseMode
 
 """ Local """
-from omdb_client import search_movie_by_title
+from omdb_api import search_movie_by_title
 
 
 """ \_____________________________[CONSTS]_____________________________/ """
 TOKEN: Final = config('TOKEN', cast=str)
-
+OMDB_URL: Final = config('OMDB_API_URL', cast=str)
 
 """ \______________________________[LOGS]_____________________________/ """
 logging.basicConfig(
@@ -146,7 +146,7 @@ async def inlineHandle(update: Update, context: ContextTypes.DEFAULT_TYPE):
                         id=movie.imdb_id,
                         title=movie.title,
                         input_message_content=InputTextMessageContent(
-                            message_text=f"{movie.title} - {movie.year}:\n\nhttps://www.imdb.com/title/{movie.imdb_id}/"
+                            message_text=f"{movie.title} - {movie.year}:\n\n" + OMDB_URL + f"{movie.imdb_id}/"
                         ),
                         thumbnail_url=movie.poster,
                     )
