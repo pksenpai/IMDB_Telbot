@@ -1,8 +1,9 @@
 from omdb import OMDBClient
+from typing import Final
+from decouple import config
 
 
-OMDB_API_KEY = "6b01423e"
-
+OMDB_API_KEY: Final = config('OMDB_API_KEY', cast=str)
 client = OMDBClient(apikey=OMDB_API_KEY)
 
 
@@ -33,5 +34,5 @@ class Movie(object):
 def search_movie_by_title(title: str) -> list[Movie]:
     results = client.search(title, media_type="movie")
     movies = [Movie().from_dict(movie) for movie in results]
-    
+
     return movies
