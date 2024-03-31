@@ -3,7 +3,7 @@ from telebot import TeleBot
 from telebot import types
 
 
-TOKEN = config('BOT_TOKEN', cast=str)
+TOKEN = config('TOKEN', cast=str)
 bot = TeleBot(TOKEN)
 
 
