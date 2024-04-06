@@ -18,7 +18,8 @@ other options coming soon...
   <p>To run and test the project, you must create an .env file</p>
   <p>next to the other files and enter the important constants</p>
   <p>in it as blow:</p>
-  
+
+```
   <p>#Rapidapi Config</p>
   <p>RAPID_API_URL=https://imdb188.p.rapidapi.com/api/v1/searchIMDB</p>
   <p>RAPID_API_KEY= <enter your rapidapi api key></p>
@@ -30,7 +31,7 @@ other options coming soon...
 
   <p>#Botfather Config</p>
   <p>TOKEN= <enter your hashed key of telegram api></p>
-
+```
   <p>Creating this file & doing this to keep personal</p>
   <p>and important inputs secret and secure, such as</p>
   <p>telegram hashed api key that you get from botfather!</p>
