@@ -20,17 +20,17 @@ other options coming soon...
   <p>in it as blow:</p>
 
 ```
-  <p>#Rapidapi Config</p>
-  <p>RAPID_API_URL=https://imdb188.p.rapidapi.com/api/v1/searchIMDB</p>
-  <p>RAPID_API_KEY= <enter your rapidapi api key></p>
-  <p>RAPID_API_HOST= <enter your rapidapi host></p>
+  # Rapidapi Config
+  RAPID_API_URL=https://imdb188.p.rapidapi.com/api/v1/searchIMDB
+  RAPID_API_KEY= <enter your rapidapi api key>
+  RAPID_API_HOST= <enter your rapidapi host>
 
-  <p>#OMDB Config</p>
-  <p>OMDB_API_URL=https://www.imdb.com/title/</p>
-  <p>OMDB_API_KEY= <enter your omdb api key></p>
+  # OMDB Config
+  OMDB_API_URL=https://www.imdb.com/title/
+  OMDB_API_KEY= <enter your omdb api key>
 
-  <p>#Botfather Config</p>
-  <p>TOKEN= <enter your hashed key of telegram api></p>
+  # Botfather Config
+  TOKEN= <enter your hashed key of telegram api>
 ```
   <p>Creating this file & doing this to keep personal</p>
   <p>and important inputs secret and secure, such as</p>
