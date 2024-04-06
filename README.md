@@ -2,7 +2,7 @@
 Search &amp; explore imdb movies with a telegram bot \🤖/
 bot_username: @pksenpybot
 __________________________________________________________
-##> commands:
+## > commands:
 /start  -->  greeting...
 -----------------------------------------------------------
 /help   -->  shows commands & how it works
@@ -14,17 +14,17 @@ __________________________________________________________
 other options coming soon...
 
 ***********************************************************
-##> .env:
+## > .env:
   To run and test the project, you must create an .env file
   next to the other files and enter the important constants
   in it as blow:
   
-  # Rapidapi Config
+  #Rapidapi Config
   RAPID_API_URL=https://imdb188.p.rapidapi.com/api/v1/searchIMDB
   RAPID_API_KEY= <enter your rapidapi api key>
   RAPID_API_HOST= <enter your rapidapi host>
 
-  # OMDB Config
+  #OMDB Config
   OMDB_API_URL=https://www.imdb.com/title/
   OMDB_API_KEY= <enter your omdb api key>
 
@@ -39,7 +39,7 @@ other options coming soon...
    
 ***********************************************************
 
-##> api code analysis:
+## > api code analysis:
   First, I wanted to use the requests library. unfortunately, there were limited free apis
   both in terms of time and speed (i wrote the code in the rapid_api.py).
   then i found a better library for api!
@@ -51,7 +51,7 @@ other options coming soon...
   as i want using validators and my own standard in the dictionary.
 
 -----------------------------------------------------------
-##> Qbot code analysis:
+## > Qbot code analysis:
 - At the beginning of the code,
   the required packages and modules are imported,
   and some initial settings are performed.
