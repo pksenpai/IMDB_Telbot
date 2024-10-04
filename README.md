@@ -5,7 +5,8 @@ bot_username: @pksenpybot
 <br>
 <br>
 <br>
-![BinaryTree](https://github.com/pksenpai/IMDB_Telbot/blob/main/IMDB_Bot.png)
+<a href='#' target='_blank'> <img src='https://github.com/pksenpai/IMDB_Telbot/blob/main/IMDB_Bot.png' /> </a>
+![BinaryTree]()
 __________________________________________________________
 ## > commands:
 /start  -->  greeting...
