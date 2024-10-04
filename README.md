@@ -2,6 +2,7 @@
 Search &amp; explore imdb movies with a telegram bot \🤖/
 make your movie bot with this code!
 bot_username: @pksenpybot
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "bot overview")
 __________________________________________________________
 ## > commands:
 /start  -->  greeting...
